@@ -13,7 +13,7 @@
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 
 // Your Xively key to let you upload data
-char xivelyKey[] = "fMfrkF1wicZZ7sYfhQmR5SAZ1_GSAKxJL1dFZkM1UWdGST0g";
+char xivelyKey[] = "";
 
 volatile int CNT;         // variable for counting interrupts from dosimeter 
 unsigned long lastConnectionTime = 0;                // last time we connected to Xively
