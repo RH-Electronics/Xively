@@ -13,7 +13,7 @@
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 
 // Your Xively key to let you upload data
-char xivelyKey[] = "";
+char xivelyKey[] = "YOUR_API_KEY_HERE";
 
 volatile int CNT;         // variable for counting interrupts from dosimeter 
 unsigned long lastConnectionTime = 0;                // last time we connected to Xively
@@ -27,7 +27,7 @@ XivelyDatastream datastreams[] = {
   XivelyDatastream(sensorId, strlen(sensorId), DATASTREAM_FLOAT),
 };
 // Finally, wrap the datastreams into a feed
-XivelyFeed feed(122314, datastreams, 1 /* number of datastreams */);
+XivelyFeed feed(123456, datastreams, 1 /* number of datastreams */);  //123456 is YOUR_FEED_ID
 EthernetClient client;
 XivelyClient xivelyclient(client);
 
